@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+#card{
+    border-radius: 10px;
+   /*  display: flex; */
+   
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#card img{
+    height: 65%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+#card h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+#card h5{
+    font-size: 25px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#card button{
+    background-color: #0095F6;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border:none;
+    margin: 5px;
+    cursor:pointer;
+}
+
+ #card #remove{
+    background-color: #dadada;
+    color: #111;
+} 
+.container{
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+/* -----LIKE ----- */
+
+#card{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    position: cover;
+    background-color: white;
+
+}
+
+/* #card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+} */
+
+#card i{
+    color: #fff;
+    font-size: 75px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.4s;
+}
